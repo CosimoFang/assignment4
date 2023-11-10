@@ -1,4 +1,4 @@
-# CS5300-projectt 4
+# CS5300-project 4
 
 Hongchao Fang
 
