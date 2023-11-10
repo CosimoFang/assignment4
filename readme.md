@@ -16,4 +16,4 @@ use cmd to run the vidDisplay.exe file
 4. to calibrate the img again, press d and u can repeat process 1.2
 The camera matrix and dis coeff will be saved to txt file automaticlly after each calibration
 
-"[video](https://drive.google.com/file/d/1k_JXMa-llMpT5uJEK_lYA-NWn-2PwGNE/view?usp=drive_link)"
+Representation: [video](https://drive.google.com/file/d/1k_JXMa-llMpT5uJEK_lYA-NWn-2PwGNE/view?usp=drive_link)
