@@ -1,19 +1,43 @@
-# CS5300-project 4
+### Annotation description
 
-Hongchao Fang
+You will be given an human-written sentence, which describes an experiment in a NLP paper, along with a model generated explanation that tries to explain the motivation of this experiment. 
 
-os win11
-ide vs studio
+Your task is to decide whether the model-generated explanation is acceptable or not (i.e., sounds reasonble, instead of hallucination). Enter `0` in the terminal if you think the explanation is not acceptable, and `1` if you think the explanation is acceptable.
 
-The is a Augmented Reality project by using chessboard img as background to display a pyramid in the screen in 3D
+### Run annotation
 
-How to run:
-use cmd to run the vidDisplay.exe file
+no specific python package is required. You can run in your terminal by:
+```bash
+python annotate.py
+```
 
-1. Press s to save a img for calibration
-2. Press c to calibrate the img with at least 5 saved img
-3. After pressing c, press d to display the pyramid on the screen
-4. to calibrate the img again, press d and u can repeat process 1.2
-The camera matrix and dis coeff will be saved to txt file automaticlly after each calibration
+you will see something printed in the terminal like:
+```
+*
+*
+*
+*
+*
 
-Representation: [video](https://drive.google.com/file/d/1k_JXMa-llMpT5uJEK_lYA-NWn-2PwGNE/view?usp=drive_link)
+==================== ### Experiment Idea ### ====================
+```
+1. SimCSE performance evaluation: 
+```
+
+==================== ### Model Explanation ### ====================
+==> model_name:  model A
+```
+1. To demonstrate the effectiveness of SimCSE by providing a direct performance comparison against existing state-of-the-art methods on widely recognized benchmarks.
+```
+
+==================== ### Annotation ### ====================
+==> is this model's explanation sounds reasonable and acceptable? (enter '0' if not acceptable, '1' if acceptable)
+```
+
+you have to enter in the terminal either `0` or `1` based on your judgement. 
+
+Note that, there are 5 models' generated explanations, which means you will see one experiment idea repeat for 5 times along with 5 different model explanations (model A, B, C, D, E).  
+
+It's possible, model's generated explanation is `None` or just an empyt string `""`, just give `0` in that case.
+
+Once you start annotating, pls DO NOT close your terminal, otherwise you will lose the progress.
